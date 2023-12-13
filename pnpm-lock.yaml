@@ -15,7 +15,7 @@ dependencies:
     specifier: ^4.18.2
     version: 4.18.2
   helmet:
-    specifier: ^6.0.1
+    specifier: ^6.2.0
     version: 6.2.0
   husky:
     specifier: ^8.0.3
@@ -26,28 +26,31 @@ dependencies:
 
 devDependencies:
   '@types/cookie-parser':
-    specifier: ^1.4.3
+    specifier: ^1.4.6
     version: 1.4.6
   '@types/cors':
-    specifier: ^2.8.13
+    specifier: ^2.8.17
     version: 2.8.17
   '@types/express':
-    specifier: ^4.17.17
+    specifier: ^4.17.21
     version: 4.17.21
   '@types/morgan':
-    specifier: ^1.9.5
+    specifier: ^1.9.9
     version: 1.9.9
   '@types/node':
-    specifier: ^20.5.6
+    specifier: ^20.10.4
     version: 20.10.4
   '@typescript-eslint/eslint-plugin':
-    specifier: ^6.4.1
+    specifier: ^6.14.0
     version: 6.14.0(@typescript-eslint/parser@6.14.0)(eslint@8.55.0)(typescript@5.3.3)
   '@typescript-eslint/parser':
-    specifier: ^6.4.1
+    specifier: ^6.14.0
     version: 6.14.0(eslint@8.55.0)(typescript@5.3.3)
+  dotenv-cli:
+    specifier: ^7.3.0
+    version: 7.3.0
   eslint:
-    specifier: ^8.48.0
+    specifier: ^8.55.0
     version: 8.55.0
   nodemon:
     specifier: ^3.0.2
@@ -59,7 +62,7 @@ devDependencies:
     specifier: ^10.9.2
     version: 10.9.2(@types/node@20.10.4)(typescript@5.3.3)
   typescript:
-    specifier: ^5.2.2
+    specifier: ^5.3.3
     version: 5.3.3
 
 packages:
@@ -723,6 +726,26 @@ packages:
       esutils: 2.0.3
     dev: true
 
+  /dotenv-cli@7.3.0:
+    resolution: {integrity: sha512-314CA4TyK34YEJ6ntBf80eUY+t1XaFLyem1k9P0sX1gn30qThZ5qZr/ZwE318gEnzyYP9yj9HJk6SqwE0upkfw==}
+    hasBin: true
+    dependencies:
+      cross-spawn: 7.0.3
+      dotenv: 16.3.1
+      dotenv-expand: 10.0.0
+      minimist: 1.2.8
+    dev: true
+
+  /dotenv-expand@10.0.0:
+    resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
+    engines: {node: '>=12'}
+    dev: true
+
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
+    engines: {node: '>=12'}
+    dev: true
+
   /ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
@@ -1282,6 +1305,10 @@ packages:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
       brace-expansion: 1.1.11
+    dev: true
+
+  /minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
 
   /morgan@1.10.0:
