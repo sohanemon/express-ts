@@ -14,7 +14,8 @@ async function routeHandlers(app: express.Application) {
     const relativePath = path.join(folderPath, file);
     const route = await import(relativePath);
     const routePath = `/${path.basename(file, path.extname(file))}`;
-    app.use(routePath, route.default);
+
+    app.use(routePath === '/index' ? '/' : routePath, route.default);
   }
 }
 
