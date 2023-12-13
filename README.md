@@ -60,6 +60,27 @@ Thats it! No more integration.
 - **Environment Variables**: `Dotenv-cli` integration for managing environment variables in development and production setups.
 - **Production Ready**: The starter is configured for deployment on platforms like Render.com and Vercel, with predefined build and start commands.
 
+## Quick Start
+
+- **Initialize Project**: You can quickly bootstrap a new Express TypeScript project using the `npx` command.
+
+```bash
+npx sohanemon@latest express-ts my-express-app
+```
+
+```bash
+npx sohanemon@latest express-ts my-express-app --yarn
+```
+
+```bash
+npx sohanemon@latest express-ts my-express-app --pnpm
+```
+
+```bash
+npx sohanemon@latest express-ts my-express-app --bun
+
+```
+
 ## Getting Started
 
 1. Clone the repository.
