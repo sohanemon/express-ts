@@ -4,7 +4,7 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 
-export const setupGlobalMiddleware = (app: express.Application) => {
+export const setupGlobalMiddlewares = (app: express.Application) => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
   app.use(cookieParser());
