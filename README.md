@@ -31,11 +31,11 @@ router.get('/', function (req, res) {
 router.post('/create', function (req, res) {
   res.send('User created');
 });
-data:image/svg%252Bxml%253Bcharset%253DUTF-8%253Bbase64%252CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2MHB4IiBoZWlnaHQ9IjE2MHB4IiB2aWV3Qm94PSIwIDAgMTYwIDE2MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%252BCiAgICAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGFsaWdubWVudC1iYXNlbGluZT0iY2VudHJhbCIgZm9udC1zaXplPSIxMjAiPvCfmJo8L3RleHQ%252BCjwvc3ZnPg%253D%253D
+
 export default router;
 ```
 
-Thats it!
+Thats it! No more integration.
 
 ### Husky for Git Hooks
 
