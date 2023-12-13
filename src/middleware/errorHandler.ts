@@ -1,9 +1,6 @@
-import { ErrorRequestHandler } from 'express';
+import express, { ErrorRequestHandler, RequestHandler } from 'express';
 import config from '../configs/config.js';
 
-/**
- * 500 response & log when errors are raised.
- */
 const errorHandler: ErrorRequestHandler = (err, _req, res) => {
   console.error(err);
   return res.status(500).json({
@@ -11,4 +8,11 @@ const errorHandler: ErrorRequestHandler = (err, _req, res) => {
   });
 };
 
-export default errorHandler;
+const fourOhFour: RequestHandler = (_req, res) => {
+  return res.status(404).json({ message: 'not found' });
+};
+
+export const setupErrorHandlers = (app: express.Application) => {
+  app.use(fourOhFour);
+  app.use(errorHandler);
+};
