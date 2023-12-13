@@ -1,6 +1,3 @@
-# build directory
-dist
-
 # environment variable files
 .env
 .env.development
