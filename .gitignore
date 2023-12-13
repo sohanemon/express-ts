@@ -60,3 +60,4 @@ dist
 ehthumbs.db
 Thumbs.db
 pnpm-lock.yaml
+.vercel

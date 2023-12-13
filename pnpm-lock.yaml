@@ -17,6 +17,9 @@ dependencies:
   helmet:
     specifier: ^6.0.1
     version: 6.2.0
+  husky:
+    specifier: ^8.0.3
+    version: 8.0.3
   morgan:
     specifier: ^1.10.0
     version: 1.10.0
@@ -1090,6 +1093,12 @@ packages:
       setprototypeof: 1.2.0
       statuses: 2.0.1
       toidentifier: 1.0.1
+    dev: false
+
+  /husky@8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: false
 
   /iconv-lite@0.4.24:
