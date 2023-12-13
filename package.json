@@ -10,6 +10,7 @@
   "scripts": {
     "start": "tsc && node dist/src/server.js",
     "build": "tsc",
+    "clean": "rm -rf dist",
     "dev": "nodemon src/server.ts",
     "lint": "npx eslint src",
     "typecheck": "tsc --noEmit",
