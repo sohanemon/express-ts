@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-async function useRoutes(app: express.Application) {
+async function routeHandlers(app: express.Application) {
   const folderPath = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
     './routes',
@@ -18,4 +18,4 @@ async function useRoutes(app: express.Application) {
   }
 }
 
-export default useRoutes;
+export default routeHandlers;
