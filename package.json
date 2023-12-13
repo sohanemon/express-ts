@@ -9,10 +9,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "cross-env NODE_ENV=production dotenv -e .env node dist/src/index.js",
-    "dev": "ts-node",
-    "test": "cross-env NODE_ENV=test dotenv -e .env jest",
-    "test:watch": "cross-env NODE_ENV=test dotenv -e .env jest --watch",
+    "dev": "nodemon --esm src/index.ts",
     "lint": "npx eslint src",
     "format": "prettier --check \"{*.js,!(node*)**/*.ts}\"",
     "format:write": "prettier --write \"{*.js,!(node*)**/*.ts}\""
@@ -37,10 +34,10 @@
     "cross-env": "^7.0.3",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.48.0",
-    "nodemon": "^3.0.1",
+    "nodemon": "^3.0.2",
     "prettier": "3.1.1",
     "supertest": "^6.3.3",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2"
   }
 }
