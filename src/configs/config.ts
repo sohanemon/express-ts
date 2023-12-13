@@ -4,10 +4,9 @@ const config = {
   description: 'Simple express-ts starter with file based routing',
 
   nodeEnv: process.env.NODE_ENV ?? 'development',
-  port: process.env.PORT ?? 3000,
+  port: process.env.PORT ?? 5000,
 
   clientCorsOrigins: {
-    test: process.env.DEV_ORIGIN ?? '*',
     development: process.env.DEV_ORIGIN ?? '*',
     production: process.env.PROD_ORIGIN ?? 'none',
   },

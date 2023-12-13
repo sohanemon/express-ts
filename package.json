@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node Express Typescript Starter",
   "author": "SohanEmon <sohanemon@outlook.com>",
-  "license": "MIT-0",
+  "license": "MIT",
   "private": false,
   "main": "dist/src/server.js",
   "type": "module",
