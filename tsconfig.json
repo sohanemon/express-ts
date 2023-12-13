@@ -16,14 +16,14 @@
     "moduleResolution": "NodeNext",
     "module": "NodeNext",
     "outDir": "dist",
-    "sourceMap": true,
+    "sourceMap": false,
     "lib": ["es2022"],
     "forceConsistentCasingInFileNames": true,
     "rootDir": "."
   },
   "include": ["src/**/*.ts"],
   "exclude": ["dist", "node_modules"],
-  "files": ["server.ts"],
+  "files": ["src/server.ts"],
   "compileOnSave": true,
   "typeAcquisition": {
     "enable": true

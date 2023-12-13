@@ -49,6 +49,8 @@ pids
 *.seed
 *.pid.lock
 
+dist
+
 # OS generatred
 .DS_Store
 .DS_Store?
@@ -57,3 +59,4 @@ pids
 .Trashes
 ehthumbs.db
 Thumbs.db
+pnpm-lock.yaml
