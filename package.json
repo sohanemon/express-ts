@@ -1,7 +1,7 @@
 {
   "name": "express-ts",
   "version": "1.0.0",
-  "description": "A minimally opinionated typescript & express starter",
+  "description": "Node Express Typescript Starter",
   "author": "SohanEmon <sohanemon@outlook.com>",
   "license": "MIT-0",
   "private": false,
@@ -12,8 +12,10 @@
     "build": "tsc",
     "dev": "nodemon src/server.ts",
     "lint": "npx eslint src",
+    "typecheck": "tsc --noEmit",
     "format": "prettier --check \"{*.js,!(node*)**/*.ts}\"",
-    "format:write": "prettier --write \"{*.js,!(node*)**/*.ts}\""
+    "format:write": "prettier --write \"{*.js,!(node*)**/*.ts}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
