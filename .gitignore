@@ -49,8 +49,6 @@ pids
 *.seed
 *.pid.lock
 
-dist
-
 # OS generatred
 .DS_Store
 .DS_Store?
