@@ -13,5 +13,4 @@ export const setupHelpers = (app: express.Application) => {
 
   app.use(helmet());
   app.use(morgan('tiny'));
-  app.use(express.static('public'))
 };
