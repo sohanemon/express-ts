@@ -18,16 +18,12 @@
     "outDir": "dist",
     "sourceMap": true,
     "lib": ["es2022"],
-    "rootDir": ".",
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src",
-    "paths": {
-      "@": ["."]
-    }
+    "rootDir": "."
   },
-  "include": ["src/**/*"],
-  "files": ["src/index.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["dist", "node_modules"],
+  "files": ["index.ts"],
   "compileOnSave": true,
   "typeAcquisition": {
     "enable": true

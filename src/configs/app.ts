@@ -2,14 +2,14 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
-import errorHandler from 'middleware/errorHandler.js';
-import fourOhFour from 'middleware/fourOhFour.js';
 import morgan from 'morgan';
-import root from 'routes/root.js';
+import root from '../routes/root.js';
+import errorHandler from '../middleware/errorHandler.js';
+import fourOhFour from '../middleware/fourOhFour.js';
 
 const app = express();
 
-// Apply most middleware first
+// middleware first
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -19,10 +19,10 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan('tiny'));
 
-// Apply routes before error handling
+// routes middle
 app.use('/', root);
 
-// Apply error handling last
+// error handling last
 app.use(fourOhFour);
 app.use(errorHandler);
 

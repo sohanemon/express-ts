@@ -8,8 +8,8 @@
   "main": "dist/src/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "dev": "nodemon --esm src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc && node dist/src/index.js",
     "lint": "npx eslint src",
     "format": "prettier --check \"{*.js,!(node*)**/*.ts}\"",
     "format:write": "prettier --write \"{*.js,!(node*)**/*.ts}\""
@@ -38,6 +38,7 @@
     "prettier": "3.1.1",
     "supertest": "^6.3.3",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
   }
 }
