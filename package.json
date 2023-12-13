@@ -5,11 +5,11 @@
   "author": "SohanEmon <sohanemon@outlook.com>",
   "license": "MIT-0",
   "private": false,
-  "main": "dist/src/index.js",
+  "main": "dist/src/server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.ts",
-    "build": "tsc && node dist/src/index.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc && node dist/src/server.js",
     "lint": "npx eslint src",
     "format": "prettier --check \"{*.js,!(node*)**/*.ts}\"",
     "format:write": "prettier --write \"{*.js,!(node*)**/*.ts}\""
