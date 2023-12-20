@@ -1,7 +1,10 @@
+import packageJson from '../../package.json' assert { type: 'json' };
+
 const config = {
-  version: '1.0.2',
-  name: 'Node Express TS',
-  description: 'Simple express-ts starter with file based routing',
+  version: packageJson.version,
+  name: packageJson.name,
+  description: packageJson.description,
+  author: packageJson.author,
 
   nodeEnv: process.env.NODE_ENV ?? 'development',
   port: process.env.PORT ?? 5000,
