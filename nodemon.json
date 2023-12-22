@@ -1,5 +1,5 @@
 {
   "watch": ["./src", "./.env", "./package.json", "./tsconfig.json"],
   "ext": "*",
-  "exec": "dotenv -e .env ts-node ./src/server.ts"
+  "exec": "NODE_OPTIONS=\"--experimental-modules --no-warnings\" dotenv -e .env ts-node ./src/server.ts"
 }

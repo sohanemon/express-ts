@@ -6,6 +6,9 @@ const getRoot: RequestHandler = (_req, res) => {
     name: config.name,
     description: config.description,
     version: config.version,
+    author: config.author,
+    nodeEnv: config.nodeEnv,
+    origin: process.env.PROD_ORIGIN,
   });
 };
 
